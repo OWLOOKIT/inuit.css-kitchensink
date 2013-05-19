@@ -1,12 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: $brand-dark;
+}
+a {
+	color: $brand-color;
+}
+
 body {
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 24px;
+	padding: em(24px);
+}
+
+//Masthead
+.masthead {
+	position: relative;
+}
+.masthead__logo {
+	display: inline-block;
+	width: em(280px, $h1-size);
+	height: em(130px,$h1-size);
+	background: url(../images/inuitcss.png) no-repeat;
+}
+.masthead__text {
+	display: block;
+}
+
+@media screen and (min-width: 570px) {
+	.masthead__text {
+		position: absolute;
+		top: em(47px, $h1-size);
+		left: em(285px, $h1-size);
+	}
 }
 
 .section-title {
 	margin-top: 2em;
-	border-bottom:1px solid grey;
+	border-bottom: 1px solid $base-ui-color;
 	&:first-child {
 		margin-top: 0;
 	}
@@ -15,22 +50,24 @@ body {
 //Beautons
 .btn-demo {
 	margin-bottom: 0.5em;
+	color: $brand-light;
 }
 
 //Full Bleed
 .bleed-demo {
-	background-color: blue;
+	background-color: $brand-color;
+	color: $brand-light;
 }
 
 //Flexbox
 .flexbox-demo {
 	margin-bottom:  1em;
-	border: 1px solid black;
+	border: 1px solid ;
 }
 
 //Floats
 .float-demo {
-	width: 100px;
+	width: em(100px);
 	+ hr  {
 		clear: both;
 	}
@@ -38,5 +75,5 @@ body {
 
 //Grids
 .grid-demo {
-	border: 1px solid black;
+	border: 1px solid darken($base-ui-color, 40%);
 }

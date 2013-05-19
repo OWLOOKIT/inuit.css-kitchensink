@@ -58,9 +58,8 @@ $use-greybox:       true;
 /**
  * Place any variables that should override inuit.css’ defaults here.
  */
-
-
-
+$brand-color: #3F89C1;
+$beautons: $brand-color;
 
 
 /*------------------------------------*\
@@ -69,3 +68,5 @@ $use-greybox:       true;
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+$brand-dark: #2F4054;
+$brand-light: #fff;

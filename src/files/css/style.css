@@ -625,7 +625,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -2835,7 +2835,7 @@ html.flexbox {
   /* [7] */
   padding-left: 1em;
   /* [7] */
-  background-color: #2c77ba;
+  background-color: #3f89c1;
   /* [8] */
   border-radius: 4px;
   /* [8] */
@@ -4004,7 +4004,7 @@ html.flexbox {
  */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important;
+  color: #3f89c1!important;
 }
 
 .brand-face {
@@ -4013,7 +4013,7 @@ html.flexbox {
 
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important;
+  color: #3f89c1!important;
 }
 
 /*------------------------------------*\
@@ -4032,7 +4032,7 @@ html.flexbox {
  * Add/remove floats
  */
 .float--right {
-  float: right !important;
+  float: right!important;
 }
 
 .float--left {
@@ -4047,11 +4047,11 @@ html.flexbox {
  * Text alignment
  */
 .text--left {
-  text-align: left  !important;
+  text-align: left !important;
 }
 
 .text--center {
-  text-align: center !important;
+  text-align: center!important;
 }
 
 .text--right {
@@ -4062,15 +4062,15 @@ html.flexbox {
  * Font weights
  */
 .weight--light {
-  font-weight: 300 !important;
+  font-weight: 300!important;
 }
 
 .weight--normal {
-  font-weight: 400 !important;
+  font-weight: 400!important;
 }
 
 .weight--semibold {
-  font-weight: 600 !important;
+  font-weight: 600!important;
 }
 
 /**
@@ -4137,33 +4137,33 @@ html.flexbox {
 }
 
 .flush {
-  margin: 0 !important;
+  margin: 0!important;
 }
 
 .flush--top {
-  margin-top: 0 !important;
+  margin-top: 0!important;
 }
 
 .flush--right {
-  margin-right: 0 !important;
+  margin-right: 0!important;
 }
 
 .flush--bottom {
-  margin-bottom: 0 !important;
+  margin-bottom: 0!important;
 }
 
 .flush--left {
-  margin-left: 0 !important;
+  margin-left: 0!important;
 }
 
 .flush--ends {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
 }
 
 .flush--sides {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+  margin-right: 0!important;
+  margin-left: 0!important;
 }
 
 /**
@@ -4230,33 +4230,33 @@ html.flexbox {
 }
 
 .hard {
-  padding: 0 !important;
+  padding: 0!important;
 }
 
 .hard--top {
-  padding-top: 0 !important;
+  padding-top: 0!important;
 }
 
 .hard--right {
-  padding-right: 0 !important;
+  padding-right: 0!important;
 }
 
 .hard--bottom {
-  padding-bottom: 0 !important;
+  padding-bottom: 0!important;
 }
 
 .hard--left {
-  padding-left: 0 !important;
+  padding-left: 0!important;
 }
 
 .hard--ends {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
 }
 
 .hard--sides {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 /**
@@ -4276,14 +4276,14 @@ html.flexbox {
  * `:hover`.
  */
 .informative {
-  cursor: help !important;
+  cursor: help!important;
 }
 
 /**
  * Mute an object by reducing its opacity.
  */
 .muted {
-  opacity: 0.5 !important;
+  opacity: 0.5!important;
   filter: alpha(opacity=50) !important;
 }
 
@@ -4294,7 +4294,7 @@ html.flexbox {
  *
  */
 .proceed {
-  text-align: right !important;
+  text-align: right!important;
 }
 
 /**
@@ -4311,7 +4311,7 @@ html.flexbox {
  * Apply capital case to an element (usually a `strong`).
  */
 .caps {
-  text-transform: uppercase !important;
+  text-transform: uppercase!important;
 }
 
 /**
@@ -4320,107 +4320,161 @@ html.flexbox {
  */
 .accessibility,
 .visuallyhidden {
-  border: 0 !important;
+  border: 0!important;
   clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
+  height: 1px!important;
+  margin: -1px!important;
+  overflow: hidden!important;
+  padding: 0!important;
+  position: absolute!important;
+  width: 1px!important;
 }
 
 @media only screen and (max-width: 480px) {
   .accessibility--palm,
   .visuallyhidden--palm {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .accessibility--lap,
   .visuallyhidden--lap {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 @media only screen and (min-width: 481px) {
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 @media only screen and (max-width: 1023px) {
   .accessibility--portable,
   .visuallyhidden--portable {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 @media only screen and (min-width: 1024px) {
   .accessibility--desk,
   .visuallyhidden--desk {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 @media only screen and (min-width: 1200px) {
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
-    border: 0 !important;
+    border: 0!important;
     clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
   }
 }
 /* endif */
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+/*
+ * Image replacement from https://github.com/h5bp/html5-boilerplate
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #2f4054;
+}
+
+a {
+  color: #3f89c1;
+}
+
 body {
   max-width: 960px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 1.5em;
 }
 
+.masthead {
+  position: relative;
+}
+
+.masthead__logo {
+  display: inline-block;
+  width: 7.77778em;
+  height: 3.61111em;
+  background: url(../images/inuitcss.png) no-repeat;
+}
+
+.masthead__text {
+  display: block;
+}
+
+@media screen and (min-width: 570px) {
+  .masthead__text {
+    position: absolute;
+    top: 1.30556em;
+    left: 7.91667em;
+  }
+}
 .section-title {
   margin-top: 2em;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #cccccc;
 }
 .section-title:first-child {
   margin-top: 0;
@@ -4428,24 +4482,26 @@ body {
 
 .btn-demo {
   margin-bottom: 0.5em;
+  color: white;
 }
 
 .bleed-demo {
-  background-color: blue;
+  background-color: #3f89c1;
+  color: white;
 }
 
 .flexbox-demo {
   margin-bottom: 1em;
-  border: 1px solid black;
+  border: 1px solid;
 }
 
 .float-demo {
-  width: 100px;
+  width: 6.25em;
 }
 .float-demo + hr {
   clear: both;
 }
 
 .grid-demo {
-  border: 1px solid black;
+  border: 1px solid #666666;
 }
