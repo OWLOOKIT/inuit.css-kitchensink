@@ -4,15 +4,16 @@
 
 ## How to install and run
 
-1. Windows folks, make sure you have [Ruby](http://rubyinstaller.org/) installed
-2. Install [Sass](http://sass-lang.com/download.html)
-3. Install [Node](http://nodejs.org/)
-4. Install [Docpad](http://docpad.org/docs/install)
-5. From the root directory run
+1. Run `git clone --recursive https://github.com/terabytenz/inuit.css-kitchensink.git dir-name` to check out the project and the Inuit.css submodule
+2. Windows folks, make sure you have [Ruby](http://rubyinstaller.org/) installed
+3. Install [Sass](http://sass-lang.com/download.html)
+4. Install [Node](http://nodejs.org/)
+5. Install [Docpad](http://docpad.org/docs/install)
+6. From the root directory run
     1. `npm install` to install the required plugins
     2. `docpad run` to start the server
     3. `sass --watch src/files/css/style.scss:src/files/css/style.css --style expanded` or run `sass-watch.bat` on Windows. I've had issues getting the [Docpad Sass plugin](https://github.com/docpad/docpad-plugin-sass) to work hence why I'm using a separate command.
-6. Go to [http://localhost:9778](http://localhost:9778)
+7. Go to [http://localhost:9778](http://localhost:9778)
 
 ## Setup
 The layout follows Docpad conventions.
