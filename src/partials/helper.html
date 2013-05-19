@@ -1,0 +1,76 @@
+---
+title: Helper
+isPartial: true
+---
+
+<h2 class="section-title" id="helper">Helper</h2>
+<p>A series of helper classes to use arbitrarily. Only use a helper class if an element/component doesn’t already have a class to which you could apply this styling, e.g. if you need to float `.main-nav` left then add `float:left;` to that ruleset as opposed to adding the `.float--left` class to the markup.</p>
+<p>A lot of these classes carry `!important` as you will always want them to win out over other selectors.</p>
+
+<h3>Add/remove Floats</h3>
+<p class="float--none float-demo greybox">Float none</p>
+<p class="float--right float-demo greybox">Float right</p>
+<p class="float--left float-demo greybox">Float left</p>
+<hr />
+
+<h3>Text aligment</h3>
+<p class="text--left">Text left</p>
+<p class="text--center">Text center</p>
+<p class="text--right">Text right</p>
+<hr />
+
+<h3>Font weights</h3>
+<p class="weight--light">Weight light</p>
+<p class="weight--normal">Weight normal</p>
+<p class="weight--semibold">Weight semibold</p>
+<hr />
+
+<h3>Full bleed</h3>
+<div class="island greybox">
+	<p class="full-bleed bleed-demo">Pull items full width of `.island` parents.<p>
+</div>
+<div class="islet greybox">
+	<p class="full-bleed bleed-demo">Pull items full width of `.islet` parents.<p>
+</div>
+<hr />
+
+<h3>Informative</h3>
+<p>Add a help cursor to any element that gives the user extra information on `:hover`.</p>
+<a class="btn informative">Help?</a> (Hover me)
+<hr />
+
+<h3>Muted</h3>
+<p>Mute an object by reducing its opacity.</p>
+<a class="btn btn--positive">Without `.muted`</a>
+<a class="btn btn--positive muted">With `.muted`</a>
+<hr />
+
+<h3>Go</h3>
+<p>Add a right-angled quote to links that imply movement</p>
+<a href="#" class="go">Read more</a>
+<hr />
+
+<h3>Caps</h3>
+<p>Apply capital case to an element (usually a `strong`).</p>
+<p class="caps">CAPITALIZE</p>
+<hr />
+
+<h3>Accessibility</h3>
+<p>Hide content off-screen without resorting to `display:none;`, also provide breakpoint specific hidden elements. Classes include:</p>
+<ul>
+	<li>.accessibility</li>
+	<li>.visuallyhidden</li>
+	<li>.accessibility--palm</li>
+	<li>.visuallyhidden--palm</li>
+	<li>.accessibility--lap</li>
+	<li>.visuallyhidden--lap</li>
+	<li>.accessibility--lap-and-up</li>
+	<li>.visuallyhidden--lap-and-up</li>
+	<li>.accessibility--portable</li>
+	<li>.visuallyhidden--portable</li>
+	<li>.accessibility--desk</li>
+	<li>.visuallyhidden--desk</li>
+	<li>.accessibility--desk-wide</li>
+	<li>.visuallyhidden--desk-wide</li>
+</ul>
+
