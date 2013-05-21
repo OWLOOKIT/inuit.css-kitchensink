@@ -18,47 +18,73 @@ layout: default
 
 	<!-- SUBNAV -->
 	<div class="grid__item lap-and-up-one-quarter subnav">
+
+		<h4>Objects</h4>
 	    <ul class="block-list">
-	    <% for partial in @getCollection("partials").toJSON(): %>
+	    <% for object in @getCollection("objects").toJSON(): %>
 	        <li>
-	            <a href="#<%= partial.title.toLowerCase().replace(' ', '-') %>">
-	                <%= partial.title %>
+	            <a href="#<%= object.title.toLowerCase().replace(' ', '-') %>">
+	                <%= object.title %>
 	            </a>
 	        </li>
 	    <% end %>
 	    </ul>
+
+	    <h4>Base</h4>
+	    <ul class="block-list">
+	    <% for base in @getCollection("bases").toJSON(): %>
+	        <li>
+	            <a href="#<%= base.title.toLowerCase().replace(' ', '-') %>">
+	                <%= base.title %>
+	            </a>
+	        </li>
+	    <% end %>
+	    </ul>
+
+	    <h4>Generics</h4>
+	    <ul class="block-list">
+	    <% for generic in @getCollection("generics").toJSON(): %>
+	        <li>
+	            <a href="#<%= generic.title.toLowerCase().replace(' ', '-') %>">
+	                <%= generic.title %>
+	            </a>
+	        </li>
+	    <% end %>
+	    </ul>
+
 	</div><!--
 
 		MAIN
 	--><div class="grid__item lap-and-up-three-quarters">
 
 		<!-- 	WHERE THE MAGIC HAPPENS -->
-		<%-@partial('beautons.html') %>
-		<%-@partial('block-list.html') %>
-		<%-@partial('breadcrumb.html') %>
-		<%-@partial('columns.html') %>
-		<%-@partial('flexbox.html') %>
-		<%-@partial('flyout.html') %>
-		<%-@partial('forms.html')%>
-		<%-@partial('greybox.html') %>
-		<%-@partial('grids.html') %>
-		<%-@partial('helper.html') %>
-		<%-@partial('images.html') %>
-		<%-@partial('island.html') %>
-		<%-@partial('link-complex.html') %>
-		<%-@partial('lozenges.html') %>
-		<%-@partial('marginalia.html') %>
-		<%-@partial('matrix.html') %>
-		<%-@partial('media.html') %>
-		<%-@partial('nav.html') %>
-		<%-@partial('options.html') %>
-		<%-@partial('pagination.html') %>
-		<%-@partial('rule.html') %>
-		<%-@partial('split.html') %>
-		<%-@partial('stats.html') %>
-		<%-@partial('tables.html') %>
-		<%-@partial('this-or-this.html') %>
-		<%-@partial('typography.html') %>
+		<%-@partial('objects/beautons.html') %>
+		<%-@partial('objects/block-list.html') %>
+		<%-@partial('objects/breadcrumb.html') %>
+		<%-@partial('objects/columns.html') %>
+		<%-@partial('objects/flexbox.html') %>
+		<%-@partial('objects/flyout.html') %>
+		<%-@partial('objects/greybox.html') %>
+		<%-@partial('objects/grids.html') %>
+		<%-@partial('objects/images.html') %>
+		<%-@partial('objects/island.html') %>
+		<%-@partial('objects/link-complex.html') %>
+		<%-@partial('objects/lozenges.html') %>
+		<%-@partial('objects/marginalia.html') %>
+		<%-@partial('objects/matrix.html') %>
+		<%-@partial('objects/media.html') %>
+		<%-@partial('objects/nav.html') %>
+		<%-@partial('objects/options.html') %>
+		<%-@partial('objects/pagination.html') %>
+		<%-@partial('objects/rule.html') %>
+		<%-@partial('objects/split.html') %>
+		<%-@partial('objects/stats.html') %>
+		<%-@partial('objects/tables.html') %>
+		<%-@partial('objects/this-or-this.html') %>
+		<%-@partial('base/forms.html')%>
+		<%-@partial('base/typography.html') %>
+		<%-@partial('generic/helper.html') %>
+		<%-@partial('generic/mixins.html') %>
 		<!-- / INUIT.CSS COMPONENTS -->
 
 		<small>This is not an official Inuit.css page. Cobbled together by <a href="https://github.com/patocallaghan" target="_blank">Pat O'Callaghan</a> at <a href="http://www.terabyte.co.nz"target="_blank">Terabyte Interactive</a>, Auckland, New Zealand. Page created with <a href="http://www.docpad.org">Docpad</a>, <a href="http://www.sass-lang.com">Sass</a> and <a href="http://www.inuitcss.com">Inuit.css</a> (obviously!).</small>

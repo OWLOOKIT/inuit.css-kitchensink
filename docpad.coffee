@@ -73,10 +73,15 @@ docpadConfig = {
 	# Collections
 	# These are special collections that our website makes available to us
 
-	# collections:
-		# This one, will fetch in all documents that have the tag "page" specified in their meta data
-		partials: ->
-            @getCollection("html").findAllLive({isPartial:true})
+	collections:
+		objects: ->
+            @getCollection("partials").findAllLive({isObject:true})
+
+		generics: ->
+            @getCollection("partials").findAllLive({isGeneric:true})
+
+		bases: ->
+            @getCollection("partials").findAllLive({isBase:true})
 
 	# =================================
 	# DocPad Events
