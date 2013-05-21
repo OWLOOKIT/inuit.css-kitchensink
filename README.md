@@ -35,7 +35,7 @@ New inuit.css partials require the following at the top of the file:
 ```
 ---
 title: Object Name
-isPartial: true
+is(Object|Base|Generic): true
 ---
 ```
 
