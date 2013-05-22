@@ -17,14 +17,6 @@ body {
 	padding: em(24px);
 }
 
-pre,
-p > code {
-	background-color: $base-ui-color;
-}
-pre{
-	padding: $base-spacing-unit;
-}
-
 //Masthead
 .masthead {
 	position: relative;

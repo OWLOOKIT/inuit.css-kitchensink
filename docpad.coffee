@@ -73,15 +73,15 @@ docpadConfig = {
 	# Collections
 	# These are special collections that our website makes available to us
 
-	collections:
-		objects: ->
-            @getCollection("partials").findAllLive({isObject:true})
+	# collections:
+		# objects: ->
+            # @getCollection("partials").findAllLive({isObject:true})
 
-		generics: ->
-            @getCollection("partials").findAllLive({isGeneric:true})
+		# generics: ->
+           # @getCollection("partials").findAllLive({isGeneric:true})
 
-		bases: ->
-            @getCollection("partials").findAllLive({isBase:true})
+		# bases: ->
+            # @getCollection("partials").findAllLive({isBase:true})
 
 	# =================================
 	# DocPad Events

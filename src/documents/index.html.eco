@@ -21,7 +21,7 @@ layout: default
 
 		<h4>Objects</h4>
 	    <ul class="block-list">
-	    <% for object in @getCollection("objects").toJSON(): %>
+	    <% for object in @getCollection("partials").findAllLive({isObject:true}).toJSON(): %>
 	        <li>
 	            <a href="#<%= object.title.toLowerCase().replace(' ', '-') %>">
 	                <%= object.title %>
@@ -32,7 +32,7 @@ layout: default
 
 	    <h4>Base</h4>
 	    <ul class="block-list">
-	    <% for base in @getCollection("bases").toJSON(): %>
+	    <% for base in @getCollection("partials").findAllLive({isBase:true}).toJSON(): %>
 	        <li>
 	            <a href="#<%= base.title.toLowerCase().replace(' ', '-') %>">
 	                <%= base.title %>
@@ -43,7 +43,7 @@ layout: default
 
 	    <h4>Generics</h4>
 	    <ul class="block-list">
-	    <% for generic in @getCollection("generics").toJSON(): %>
+	    <% for generic in @getCollection("partials").findAllLive({isGeneric:true}).toJSON(): %>
 	        <li>
 	            <a href="#<%= generic.title.toLowerCase().replace(' ', '-') %>">
 	                <%= generic.title %>
