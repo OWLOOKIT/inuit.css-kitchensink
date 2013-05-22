@@ -4450,15 +4450,6 @@ body {
   padding: 1.5em;
 }
 
-pre,
-p > code {
-  background-color: #cccccc;
-}
-
-pre {
-  padding: 24px;
-}
-
 .masthead {
   position: relative;
 }
