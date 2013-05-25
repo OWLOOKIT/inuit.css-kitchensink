@@ -58,6 +58,7 @@ layout: default
 	--><div class="grid__item lap-and-up-three-quarters">
 
 		<!-- 	WHERE THE MAGIC HAPPENS -->
+		<%-@partial('objects/arrows.html') %>
 		<%-@partial('objects/beautons.html') %>
 		<%-@partial('objects/block-list.html') %>
 		<%-@partial('objects/breadcrumb.html') %>
