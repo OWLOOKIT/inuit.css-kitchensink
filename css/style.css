@@ -2622,9 +2622,84 @@ html.flexbox {
 /**
  * Forms the basis for any/all CSS arrows.
  */
+.test-arrow--top-left, .test-arrow--top-right, .test-arrow--top-center, .test-arrow--right-top, .test-arrow--left-top, .test-arrow--right-center, .test-arrow--left-center, .test-arrow--right-bottom, .test-arrow--left-bottom, .test-arrow--bottom-left, .test-arrow--bottom-center, .test-arrow--bottom-right {
+  position: relative;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  content: "";
+  position: absolute;
+  border-collapse: separate;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before {
+  border: 12px solid transparent;
+}
+.test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  border: 11px solid transparent;
+}
+
 /**
  * Define individual edges so we can combine what we need, when we need.
  */
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after {
+  bottom: 100%;
+}
+
+.test-arrow--right-top:before, .test-arrow--left-top:before {
+  top: 11px;
+}
+.test-arrow--right-top:after, .test-arrow--left-top:after {
+  top: 12px;
+}
+
+.test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-center:after, .test-arrow--left-center:after {
+  top: 50%;
+  margin-top: -12px;
+}
+.test-arrow--right-center:after, .test-arrow--left-center:after {
+  margin-top: -11px;
+}
+
+.test-arrow--right-bottom:before, .test-arrow--left-bottom:before {
+  bottom: 11px;
+}
+.test-arrow--right-bottom:after, .test-arrow--left-bottom:after {
+  bottom: 12px;
+}
+
+.test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  top: 100%;
+}
+
+.test-arrow--left-top:before, .test-arrow--left-center:before, .test-arrow--left-bottom:before, .test-arrow--left-top:after, .test-arrow--left-center:after, .test-arrow--left-bottom:after {
+  right: 100%;
+}
+
+.test-arrow--top-left:before, .test-arrow--bottom-left:before {
+  left: 11px;
+}
+.test-arrow--top-left:after, .test-arrow--bottom-left:after {
+  left: 12px;
+}
+
+.test-arrow--top-center:before, .test-arrow--bottom-center:before, .test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  left: 50%;
+  margin-left: -12px;
+}
+.test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  margin-left: -11px;
+}
+
+.test-arrow--top-right:before, .test-arrow--bottom-right:before {
+  right: 11px;
+}
+.test-arrow--top-right:after, .test-arrow--bottom-right:after {
+  right: 12px;
+}
+
+.test-arrow--right-top:before, .test-arrow--right-center:before, .test-arrow--right-bottom:before, .test-arrow--right-top:after, .test-arrow--right-center:after, .test-arrow--right-bottom:after {
+  left: 100%;
+}
+
 /*------------------------------------*\
     $SPRITE
 \*------------------------------------*/
@@ -4478,6 +4553,101 @@ body {
 }
 .section-title:first-child {
   margin-top: 0;
+}
+
+.test-arrow {
+  display: inline-block;
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0 0.9375em 0.9375em 0;
+  padding-top: 2.5em;
+  background-color: #3f89c1;
+  color: white;
+  text-align: center;
+}
+
+.test-arrow--top-left:before {
+  border-bottom-color: #3f89c1 !important;
+}
+.test-arrow--top-left:after {
+  border-bottom-color: #3f89c1 !important;
+}
+
+.test-arrow--top-right:before {
+  border-bottom-color: #3f89c1 !important;
+}
+.test-arrow--top-right:after {
+  border-bottom-color: #3f89c1 !important;
+}
+
+.test-arrow--top-center:before {
+  border-bottom-color: #3f89c1 !important;
+}
+.test-arrow--top-center:after {
+  border-bottom-color: #3f89c1 !important;
+}
+
+.test-arrow--right-top:before {
+  border-left-color: #3f89c1 !important;
+}
+.test-arrow--right-top:after {
+  border-left-color: #3f89c1 !important;
+}
+
+.test-arrow--right-center:before {
+  border-left-color: #3f89c1 !important;
+}
+.test-arrow--right-center:after {
+  border-left-color: #3f89c1 !important;
+}
+
+.test-arrow--right-bottom:before {
+  border-left-color: #3f89c1 !important;
+}
+.test-arrow--right-bottom:after {
+  border-left-color: #3f89c1 !important;
+}
+
+.test-arrow--bottom-left:before {
+  border-top-color: #3f89c1 !important;
+}
+.test-arrow--bottom-left:after {
+  border-top-color: #3f89c1 !important;
+}
+
+.test-arrow--bottom-center:before {
+  border-top-color: #3f89c1 !important;
+}
+.test-arrow--bottom-center:after {
+  border-top-color: #3f89c1 !important;
+}
+
+.test-arrow--bottom-right:before {
+  border-top-color: #3f89c1 !important;
+}
+.test-arrow--bottom-right:after {
+  border-top-color: #3f89c1 !important;
+}
+
+.test-arrow--left-top:before {
+  border-right-color: #3f89c1 !important;
+}
+.test-arrow--left-top:after {
+  border-right-color: #3f89c1 !important;
+}
+
+.test-arrow--left-center:before {
+  border-right-color: #3f89c1 !important;
+}
+.test-arrow--left-center:after {
+  border-right-color: #3f89c1 !important;
+}
+
+.test-arrow--left-bottom:before {
+  border-right-color: #3f89c1 !important;
+}
+.test-arrow--left-bottom:after {
+  border-right-color: #3f89c1 !important;
 }
 
 .btn-demo {
