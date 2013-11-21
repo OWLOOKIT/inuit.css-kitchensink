@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/images/icon.png" />
     <title>Inuit.css Kitchen Sink</title>
-    <meta http-equiv="X-Powered-By" content="DocPad v6.34.2"/>
+    <meta name="generator" content="DocPad v6.54.9" />
     <link  rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -33,14 +33,14 @@
 	    <ul class="block-list">
 	    
 	        <li>
-	            <a href="#beautons">
-	                Beautons
+	            <a href="#arrows">
+	                Arrows
 	            </a>
 	        </li>
 	    
 	        <li>
-	            <a href="#arrows">
-	                Arrows
+	            <a href="#beautons">
+	                Beautons
 	            </a>
 	        </li>
 	    
@@ -51,8 +51,20 @@
 	        </li>
 	    
 	        <li>
+	            <a href="#breadcrumb">
+	                Breadcrumb
+	            </a>
+	        </li>
+	    
+	        <li>
 	            <a href="#columns">
 	                Columns
+	            </a>
+	        </li>
+	    
+	        <li>
+	            <a href="#flexbox">
+	                Flexbox
 	            </a>
 	        </li>
 	    
@@ -75,8 +87,8 @@
 	        </li>
 	    
 	        <li>
-	            <a href="#breadcrumb">
-	                Breadcrumb
+	            <a href="#images">
+	                Images
 	            </a>
 	        </li>
 	    
@@ -105,12 +117,6 @@
 	        </li>
 	    
 	        <li>
-	            <a href="#flexbox">
-	                Flexbox
-	            </a>
-	        </li>
-	    
-	        <li>
 	            <a href="#matrix">
 	                Matrix
 	            </a>
@@ -123,20 +129,14 @@
 	        </li>
 	    
 	        <li>
-	            <a href="#images">
-	                Images
+	            <a href="#nav">
+	                Nav
 	            </a>
 	        </li>
 	    
 	        <li>
 	            <a href="#options">
 	                Options
-	            </a>
-	        </li>
-	    
-	        <li>
-	            <a href="#nav">
-	                Nav
 	            </a>
 	        </li>
 	    
@@ -199,14 +199,14 @@
 	    <ul class="block-list">
 	    
 	        <li>
-	            <a href="#mixins">
-	                Mixins
+	            <a href="#helper">
+	                Helper
 	            </a>
 	        </li>
 	    
 	        <li>
-	            <a href="#helper">
-	                Helper
+	            <a href="#mixins">
+	                Mixins
 	            </a>
 	        </li>
 	    
@@ -1159,23 +1159,23 @@ heading hierarchy.</p>
 </ul>
 		<h2 class="section-title" id="mixins">Mixins</h2>
 
-<h3>Typography</h3>
-<h4>Font Size</h4>
+<h3 id="typography">Typography</h3>
+<h4 id="font-size">Font Size</h4>
 <p>Create a fully formed type style (sizing and vertical rhythm) by passing in a single value.</p>
 <pre><code class="lang-css">@include font-size(10px);
 @include font-size(10px, $line-height: false);</code></pre>
-<h3>Headings</h3>
+<h3 id="headings">Headings</h3>
 <p>Style any number of headings in one fell swoop</p>
 <pre><code>@include headings(1, 3){
     color:#BADA55;
 }</code></pre>
 <hr />
 
-<h3>CSS3</h3>
-<h4>Vendor</h4>
+<h3 id="css3">CSS3</h3>
+<h4 id="vendor">Vendor</h4>
 <p>Create vendor-prefixed CSS in one go</p>
 <pre><code>@include vendor(border-radius, 4px);</code></pre>
-<h4>Keyframes</h4>
+<h4 id="keyframes">Keyframes</h4>
 <p>Create CSS keyframe animations for all vendors in one go</p>
 <pre><code>.foo{
     @include vendor(animation, shrink 3s);
@@ -1186,10 +1186,10 @@ heading hierarchy.</p>
         font-size:5em;
     }
 }</code></pre>
-<h4>Truncate</h4>
+<h4 id="truncate">Truncate</h4>
 <p>Force overly long spans of text to truncate</p>
 <pre><code>@include truncate(100%);</code></pre>
-<h4>Retina</h4>
+<h4 id="retina">Retina</h4>
 <p>Media query for targetting retina devices</p>
 <pre><code>.foo{
     background-image:url(1x.png);
@@ -1197,7 +1197,7 @@ heading hierarchy.</p>
         background-image:url(2x.png);
     }
 }</code></pre>
-<h3>CSS Arrows</h3>
+<h3 id="css-arrows">CSS Arrows</h3>
 <p>This mixin creates a CSS arrow on a given element. We can have the arrow
 appear in one of 12 locations, thus:</p>
 <pre><code>      01    02    03
@@ -1221,7 +1221,7 @@ center of the element. Call the mixin thus:</p>
    border:1px solid #ACE;
    @include arrow(top, left, #BADA55, #ACE);
 }</code></pre>
-<h4>Media Query Mixin</h4>
+<h4 id="media-query-mixin">Media Query Mixin</h4>
 <p>It’s not great practice to define solid breakpoints up-front, preferring to
 modify your design when it needs it, rather than assuming you’ll want a
 change at ‘mobile’. However, as inuit.css is required to take a hands off
@@ -1296,6 +1296,18 @@ var inject = function(){
 		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
 	</a>
 	<!-- / GITHUB RIBBONS -->
+
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-45935306-1', 'terabytenz.github.io');
+	ga('send', 'pageview');
+	</script>
+	<!-- / GOOGLE ANALYTICS -->
 
 </body>
 </html>
