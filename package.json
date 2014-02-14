@@ -10,9 +10,11 @@
   "author": "@patocallaghan",
   "license": "MIT",
   "devDependencies": {
-    "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-partials": "~2.6.2",
-    "docpad-plugin-livereload": "~2.4.0",
-    "docpad-plugin-marked": "~2.1.1"
+    "docpad": "~6.63.3",
+    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-partials": "~2.8.1",
+    "docpad-plugin-marked": "~2.2.0",
+    "docpad-plugin-livereload": "~2.6.0",
+    "docpad-plugin-sass": "~2.7.1"
   }
 }
