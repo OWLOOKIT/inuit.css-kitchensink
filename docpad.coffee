@@ -40,7 +40,7 @@ docpadConfig = {
 			author: "Pat O'Callaghan"
 
 			# The website author's email
-			email: "pat@terabyte.co.nz"
+			email: "patocallaghan@gmail.com"
 
 
 
@@ -120,10 +120,14 @@ docpadConfig = {
 				# Turn off sanitisation so we can embed HTML inside our markdown files
 				sanitize: false
 
-		# sass:
-		   # sassPath: 'c:/Ruby193/bin/sass.bat'
-		   # scssPath: 'c:/Ruby193/bin/scss.bat'
-		   # compass: true
+		sass:
+			compass: true
+			scssPath: ['bundle','exec','scss']
+			sassPath: ['bundle','exec','sass']
+			outputStyle: 'expanded'
+
+		tinylivereload:
+			port: 35729
 }
 
 

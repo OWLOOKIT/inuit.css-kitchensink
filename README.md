@@ -4,29 +4,32 @@ A list of [Inuit.css](http://inuitcss.com/) component examples cobbled together 
 
 ## How to install and run
 
-1. Run `git clone --recursive https://github.com/terabytenz/inuit.css-kitchensink.git dir-name` to check out the project and the Inuit.css submodule
+1. Clone the project and Inuit.css v5.1.0 submodule. Run `git clone --recursive https://github.com/terabytenz/inuit.css-kitchensink.git`
 2. Windows folks, make sure you have [Ruby](http://rubyinstaller.org/) installed
-3. Install [Sass](http://sass-lang.com/download.html)
+3. Install [Bundler](http://bundler.io/)
 4. Install [Node](http://nodejs.org/)
 5. Install [Docpad](http://docpad.org/docs/install)
-6. From the root directory
-    1. Run `npm install` to install the required plugins
-    2. Run `docpad run` to start the server
-    3. If you need to edit the CSS run `sass --watch src/files/css/style.scss:src/files/css/style.css --style expanded` or run `sass-watch.bat` on Windows. I've had issues getting the [Docpad Sass plugin](https://github.com/docpad/docpad-plugin-sass) to work hence why I'm using a separate command.
+6. From the project root
+    1. Run `bundle install` to install the Sass and Compass gems
+    2. Run `npm install` to install the Node dependencies
+    3. Run `docpad run` to start the server
 7. Go to [http://localhost:9778](http://localhost:9778)
+8. If you want to use LiveReload during development just activate your [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)/[Firefox](https://addons.mozilla.org/en-US/firefox/addon/livereload/) LiveReload extension and the Docpad server will pick it up.
+9. Profit!
 
 ## Setup
 The layout follows Docpad conventions.
 
 * **out** - generated static site
 * **src** - working files
-    * **documents** - `index.html.eco` is the page's main content
-    * **files** - static assets for the site
+    * **documents**
+		* `index.html.eco` is the page's main content
         * **css**
-            * **inuit.css** - inuit.css submodule
+            * **inuit.css** - inuit.css v5.1.0 submodule
             * **ui**
                 * **_demo.scss** - demo specific styles
                 * **_vars.scss** - inuit.css overrides
+    * **files** - static assets for the site
     * **layouts** - `default.html.eco` is the master template
     * **partials** - html segments  inuit.css components.
 
