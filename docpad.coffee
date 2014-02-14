@@ -125,6 +125,9 @@ docpadConfig = {
 			scssPath: ['bundle','exec','scss']
 			sassPath: ['bundle','exec','sass']
 			outputStyle: 'expanded'
+
+		tinylivereload:
+			port: 35729
 }
 
 
