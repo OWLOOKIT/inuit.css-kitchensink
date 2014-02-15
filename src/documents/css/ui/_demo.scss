@@ -149,6 +149,13 @@ body {
 	border: 1px solid darken($base-ui-color, 40%);
 }
 
+.demo-code {
+	display: block;
+	width: 100%;
+	margin-top: $base-spacing-unit;
+	clear: both;
+}
+
 //Mixins
 //CSS Triangles
 /* .triangle-one-demo,

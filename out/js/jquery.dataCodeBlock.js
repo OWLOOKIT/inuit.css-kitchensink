@@ -36,7 +36,7 @@
 	// Self Execute!!
 	$.fn.dataCodeBlock({
 		processHTML: function(html){
-			return html.replace(/btn-demo(\s)?/, '');
+			return html.replace(/(\w)+-demo(\s)?/g, '');
 		}
 	});
 })(jQuery);

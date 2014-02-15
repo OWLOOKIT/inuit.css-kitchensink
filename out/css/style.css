@@ -4701,6 +4701,13 @@ body {
   border: 1px solid #666666;
 }
 
+.demo-code {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  clear: both;
+}
+
 /* .triangle-one-demo,
 .triangle-two-demo,
 .triangle-three-demo {

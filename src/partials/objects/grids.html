@@ -5,8 +5,9 @@ isObject: true
 
 <h2 class="section-title" id="grids">Grids</h2>
 <p>Fluid and nestable grid system</p>
+<p><strong>WARNING!</strong>: As Inuit.css grids are positioned using <strong>display: inline-block;</strong> you must strip whitespace from between <em>.grid__item</em> elements to get the grids to properly line up. See <a href="https://github.com/csswizardry/inuit.css/search?q=grid+inline-block&ref=cmdform&type=Issues">here</a> for more information. The recommended way to do this is to place comments between <em>.grid__item</em> elements.</p>
 <h3>Regular</h3>
-<div class="grid">
+<div class="grid" data-codeblock="#grid--default">
 
     <div class="grid__item one-whole">
         <p class="greybox">1</p>
@@ -37,8 +38,10 @@ isObject: true
     </div>
 
 </div>
+<div id="grid--default" class="demo-code"></div>
+<hr />
 <h3>Reversed</h3>
-<div class="grid grid--rev">
+<div class="grid grid--rev" data-codeblock="#grid--rev">
 
     <div class="grid__item one-whole">
         <p class="greybox">1</p>
@@ -69,8 +72,10 @@ isObject: true
     </div>
 
 </div>
+<div id="grid--rev" class="demo-code"></div>
+<hr />
 <h3>Full</h3>
-<div class="grid grid--full">
+<div class="grid grid--full" data-codeblock="#grid--full">
 
     <div class="grid__item one-whole">
         <p class="greybox grid-demo">1</p>
@@ -101,8 +106,10 @@ isObject: true
     </div>
 
 </div>
+<div id="grid--full" class="demo-code"></div>
+<hr />
 <h3>Center</h3>
-<div class="grid grid--center">
+<div class="grid grid--center" data-codeblock="#grid--center">
 
     <div class="grid__item one-whole">
         <p class="greybox">1</p>
@@ -133,3 +140,5 @@ isObject: true
     </div>
 
 </div>
+<div id="grid--center" class="demo-code"></div>
+<hr class="rule rule--ornament" />
