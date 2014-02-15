@@ -9,30 +9,37 @@ isGeneric: true
 
 #### Font Size
 Create a fully formed type style (sizing and vertical rhythm) by passing in a single value.
+<div class="demo-code">
 ```css
 @include font-size(10px);
 @include font-size(10px, $line-height: false);
 ```
+</div>
 
 ### Headings
 Style any number of headings in one fell swoop
+<div class="demo-code">
 ```
 @include headings(1, 3){
 	color:#BADA55;
 }
 ```
+</div>
 <hr />
 
 ### CSS3
 
 #### Vendor
 Create vendor-prefixed CSS in one go
+<div class="demo-code">
 ```
 @include vendor(border-radius, 4px);
 ```
+</div>
 
 #### Keyframes
 Create CSS keyframe animations for all vendors in one go
+<div class="demo-code">
 ```
 .foo{
 	@include vendor(animation, shrink 3s);
@@ -44,15 +51,19 @@ Create CSS keyframe animations for all vendors in one go
 	}
 }
 ```
+</div>
 
 #### Truncate
 Force overly long spans of text to truncate
+<div class="demo-code">
 ```
 @include truncate(100%);
 ```
+</div>
 
 #### Retina
 Media query for targetting retina devices
+<div class="demo-code">
 ```
 .foo{
 	background-image:url(1x.png);
@@ -61,6 +72,7 @@ Media query for targetting retina devices
 	}
 }
 ```
+</div>
 
 ### CSS Arrows
 
@@ -82,22 +94,28 @@ appear in one of 12 locations, thus:
 You pass this position in along with a desired arrow color and optional
 border color, for example:
 
+<div class="demo-code">
 `@include arrow(top, left, red)`
+</div>
 
 for just a single, red arrow, or:
 
+<div class="demo-code">
 `@include arrow(bottom, center, red, black)`
+</div>
 
 which will create a red triangle with a black border which sits at the bottom
 center of the element. Call the mixin thus:
 
+<div class="demo-code">
 ```
 .foo{
-   background-color:#BADA55;
-   border:1px solid #ACE;
-   @include arrow(top, left, #BADA55, #ACE);
+	background-color:#BADA55;
+	border:1px solid #ACE;
+	@include arrow(top, left, #BADA55, #ACE);
 }
 ```
+</div>
 
 #### Media Query Mixin
 
@@ -120,4 +138,6 @@ for use in a simple media query mixin. Our options are:
 
 Not using a media query will, naturally, serve styles to all devices.
 
+<div class="demo-code">
 `@include media-query(palm){ [styles here] }`
+</div>

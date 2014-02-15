@@ -222,28 +222,36 @@
 <p>It is a common design treatment to give an element a triangular points-out arrow, we typically build these with CSS. These following classes allow us to generate these arbitrarily with a mixin</p>
 
 <h3>Top</h3>
+<div class="demo-code">
 <pre><code>@include arrow(top, {location}, $color)</code></pre>
+</div>
 <p class="test-arrow test-arrow--top-left">Left</p>
 <p class="test-arrow test-arrow--top-center">Center</p>
 <p class="test-arrow test-arrow--top-right">Right</p>
 <hr />
 
 <h3>Right</h3>
+<div class="demo-code">
 <pre><code>@include arrow(right, {location}, $color)</code></pre>
+</div>
 <p class="test-arrow test-arrow--right-top">Top</p>
 <p class="test-arrow test-arrow--right-center">Center</p>
 <p class="test-arrow test-arrow--right-bottom">Bottom</p>
 <hr />
 
 <h3>Bottom</h3>
+<div class="demo-code">
 <pre><code>@include arrow(bottom, {location}, $color)</code></pre>
+</div>
 <p class="test-arrow test-arrow--bottom-left">Left</p>
 <p class="test-arrow test-arrow--bottom-center">Center</p>
 <p class="test-arrow test-arrow--bottom-right">Right</p>
 <hr />
 
 <h3>Left</h3>
+<div class="demo-code">
 <pre><code>@include arrow(left, {location}, $color)</code></pre>
+</div>
 <p class="test-arrow test-arrow--left-top">Top</p>
 <p class="test-arrow test-arrow--left-center">Center</p>
 <p class="test-arrow test-arrow--left-bottom">Bottom</p>
@@ -310,7 +318,9 @@
   <li>Foo</li>
   <li>Bar</li>
   <li>Baz</li>
-  <li><a href=# class="block-list__link">Foo Bar Baz</a></li>
+  <li>
+    <a href=# class="block-list__link">Foo</a>
+  </li>
 </ul>
 <div id="block-list--default" class="demo-code"></div>
 <hr class="rule rule--ornament" />
@@ -1236,10 +1246,10 @@ heading hierarchy.</p>
 <h3>Full bleed</h3>
 <p><em>.full-bleed</em></p>
 <div class="island greybox" data-codeblock="#full-bleed">
-	<p class="full-bleed bleed-demo">Pull items full width of `.island` parents.<p>
+	<p class="full-bleed bleed-demo">Pull items full width of `.island` parents.</p>
 </div>
 <div class="islet greybox">
-	<p class="full-bleed bleed-demo">Pull items full width of `.islet` parents.<p>
+	<p class="full-bleed bleed-demo">Pull items full width of `.islet` parents.</p>
 </div>
 <div id="full-bleed" class="demo-code"></div>
 <hr />
@@ -1297,23 +1307,33 @@ heading hierarchy.</p>
 <h3 id="typography">Typography</h3>
 <h4 id="font-size">Font Size</h4>
 <p>Create a fully formed type style (sizing and vertical rhythm) by passing in a single value.</p>
-<pre><code class="lang-css">@include font-size(10px);
-@include font-size(10px, $line-height: false);
-</code></pre>
+<div class="demo-code">
+<code>css
+@include font-size(10px);
+@include font-size(10px, $line-height: false);</code>
+</div>
+
 <h3 id="headings">Headings</h3>
 <p>Style any number of headings in one fell swoop</p>
-<pre><code>@include headings(1, 3){
+<div class="demo-code">
+<code>@include headings(1, 3){
     color:#BADA55;
-}
-</code></pre><hr />
+}</code>
+</div>
+<hr />
 
-<h3 id="css3">CSS3</h3>
-<h4 id="vendor">Vendor</h4>
-<p>Create vendor-prefixed CSS in one go</p>
-<pre><code>@include vendor(border-radius, 4px);
-</code></pre><h4 id="keyframes">Keyframes</h4>
+### CSS3
+
+#### Vendor
+Create vendor-prefixed CSS in one go
+<div class="demo-code">
+<code>@include vendor(border-radius, 4px);</code>
+</div>
+
+<h4 id="keyframes">Keyframes</h4>
 <p>Create CSS keyframe animations for all vendors in one go</p>
-<pre><code>.foo{
+<div class="demo-code">
+<code>.foo{
     @include vendor(animation, shrink 3s);
 }
 
@@ -1321,19 +1341,27 @@ heading hierarchy.</p>
     from{
         font-size:5em;
     }
-}
-</code></pre><h4 id="truncate">Truncate</h4>
+}</code>
+</div>
+
+<h4 id="truncate">Truncate</h4>
 <p>Force overly long spans of text to truncate</p>
-<pre><code>@include truncate(100%);
-</code></pre><h4 id="retina">Retina</h4>
+<div class="demo-code">
+<code>@include truncate(100%);</code>
+</div>
+
+<h4 id="retina">Retina</h4>
 <p>Media query for targetting retina devices</p>
-<pre><code>.foo{
+<div class="demo-code">
+<code>.foo{
     background-image:url(1x.png);
     @include retina(){
         background-image:url(2x.png);
     }
-}
-</code></pre><h3 id="css-arrows">CSS Arrows</h3>
+}</code>
+</div>
+
+<h3 id="css-arrows">CSS Arrows</h3>
 <p>This mixin creates a CSS arrow on a given element. We can have the arrow
 appear in one of 12 locations, thus:</p>
 <pre><code>      01    02    03
@@ -1347,17 +1375,26 @@ appear in one of 12 locations, thus:</p>
       09    08    07
 </code></pre><p>You pass this position in along with a desired arrow color and optional
 border color, for example:</p>
-<p><code>@include arrow(top, left, red)</code></p>
+<div class="demo-code">
+<code>@include arrow(top, left, red)</code>
+</div>
+
 <p>for just a single, red arrow, or:</p>
-<p><code>@include arrow(bottom, center, red, black)</code></p>
+<div class="demo-code">
+<code>@include arrow(bottom, center, red, black)</code>
+</div>
+
 <p>which will create a red triangle with a black border which sits at the bottom
 center of the element. Call the mixin thus:</p>
-<pre><code>.foo{
-   background-color:#BADA55;
-   border:1px solid #ACE;
-   @include arrow(top, left, #BADA55, #ACE);
-}
-</code></pre><h4 id="media-query-mixin">Media Query Mixin</h4>
+<div class="demo-code">
+<code>.foo{
+    background-color:#BADA55;
+    border:1px solid #ACE;
+    @include arrow(top, left, #BADA55, #ACE);
+}</code>
+</div>
+
+<h4 id="media-query-mixin">Media Query Mixin</h4>
 <p>It’s not great practice to define solid breakpoints up-front, preferring to
 modify your design when it needs it, rather than assuming you’ll want a
 change at ‘mobile’. However, as inuit.css is required to take a hands off
@@ -1375,8 +1412,9 @@ for use in a simple media query mixin. Our options are:</p>
 <li>desk-wide</li>
 </ul>
 <p>Not using a media query will, naturally, serve styles to all devices.</p>
-<p><code>@include media-query(palm){ [styles here] }</code></p>
-
+<div class="demo-code">
+<code>@include media-query(palm){ [styles here] }</code>
+</div>
 		<!-- / INUIT.CSS COMPONENTS -->
 
 		<small>This is not an official Inuit.css page. Cobbled together by <a href="https://github.com/patocallaghan" target="_blank">Pat O'Callaghan</a> at <a href="http://www.terabyte.co.nz"target="_blank">Terabyte Interactive</a>, Auckland, New Zealand. Page created with <a href="http://www.docpad.org">Docpad</a>, <a href="http://www.sass-lang.com">Sass</a> and <a href="http://www.inuitcss.com">Inuit.css</a> (obviously!).</small>
@@ -1387,7 +1425,7 @@ for use in a simple media query mixin. Our options are:</p>
 </div>
 	</div>
 
-	<script defer="defer"  src="http://code.jquery.com/jquery-2.1.0.min.js"></script><script defer="defer"  src="js/jquery.dataCodeBlock.js"></script>
+	<script defer="defer"  src="http://code.jquery.com/jquery-2.1.0.min.js"></script><script defer="defer"  src="js/zeroclipboard/ZeroClipboard.min.js"></script><script defer="defer"  src="js/jquery.dataCodeBlock.js"></script>
 
 	<!-- GITHUB RIBBON -->
 	<a href="https://github.com/terabytenz/inuit.css-kitchensink" targer="_blank">

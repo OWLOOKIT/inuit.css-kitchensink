@@ -4702,27 +4702,25 @@ body {
 }
 
 .demo-code {
+  position: relative;
   display: block;
   width: 100%;
   margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
   clear: both;
+  background: #e6e6e6;
+  font-size: 14px;
+}
+.demo-code > pre {
+  margin-bottom: 0;
 }
 
-/* .triangle-one-demo,
-.triangle-two-demo,
-.triangle-three-demo {
-	display: inline-block;
-	//margin-right: em(20px);
+.codeblock__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
-.triangle-one-demo {
-	@include arrow(top, left, red);
+.codeblock__btn:hover {
+  background-color: #326e9b;
 }
-.triangle-two-demo {
-	@include arrow(bottom, center, red, black);
-}
-.triangle-three-demo {
-	background-color:#BADA55;
-    border:1px solid #ACE;
-    @include arrow(top, left, #BADA55, #ACE);
-} */

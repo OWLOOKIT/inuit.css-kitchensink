@@ -9,7 +9,9 @@
 	$.fn.dataCodeBlock = function(options){
 
 		var defaults = {
-			processHTML: null
+			processHTML: null,
+			postProcessHTML: null,
+			postAppendCode: null,
 		};
 
 		var config = $.extend(defaults, options);
@@ -31,12 +33,27 @@
 			} else {
 				$(this).after(codeblock);
 			}
+			if(config.postAppendCode) {
+				config.postAppendCode.call(target, html);
+			}
 		});
 	};
 	// Self Execute!!
 	$.fn.dataCodeBlock({
 		processHTML: function(html){
 			return html.replace(/(\w)+-demo(\s)?/g, '');
+		},
+		postAppendCode: function(html){
+			var $thisCodeBlock = $(this);
+			var btn = '<button class="btn btn-demo js-copy btn--small btn--hard codeblock__btn">Copy</button>';
+			$thisCodeBlock.append(btn);
+			$thisCodeBlock.find('.js-copy').attr('data-clipboard-text', html);
 		}
 	});
+
+	var client = new ZeroClipboard( $('.js-copy'), {
+		  moviePath: '/js/zeroclipboard/ZeroClipboard.swf'
+	} );
+
 })(jQuery);
+

@@ -16,7 +16,7 @@
 		<%- @content %>
 	</div>
 
-	<%- @getBlock('scripts').add(['http://code.jquery.com/jquery-2.1.0.min.js', 'js/jquery.dataCodeBlock.js']).toHTML() %>
+	<%- @getBlock('scripts').add(['http://code.jquery.com/jquery-2.1.0.min.js', 'js/zeroclipboard/ZeroClipboard.min.js', 'js/jquery.dataCodeBlock.js']).toHTML() %>
 
 	<!-- GITHUB RIBBON -->
 	<a href="https://github.com/terabytenz/inuit.css-kitchensink" targer="_blank">
