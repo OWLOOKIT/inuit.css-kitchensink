@@ -16,7 +16,7 @@
     VARS.SCSS
 \*------------------------------------*/
 /**
- * Any variables you find set in inuit.cssÔÇÖ `_vars.scss` that you do not wish to
+ * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
  * keep, simply redefine here. This means that if inuit.css, for example, sets
  * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
  * that variable in this file. inuit.css ignores its own variables in favour of
@@ -27,7 +27,7 @@
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
 /**
- * All of inuit.cssÔÇÖ objects and abstractions are initially turned off by
+ * All of inuit.css’ objects and abstractions are initially turned off by
  * default. This means that you start any project with as little as possible,
  * and introducing objects and abstractions is as simple as switching the
  * following variables to `true`.
@@ -36,7 +36,7 @@
     $OVERRIDES
 \*------------------------------------*/
 /**
- * Place any variables that should override inuit.cssÔÇÖ defaults here.
+ * Place any variables that should override inuit.css’ defaults here.
  */
 /*------------------------------------*\
     $CUSTOM
@@ -47,7 +47,7 @@
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  *
  * inuitcss.com -- @inuitcss -- @csswizardry
  *
@@ -98,7 +98,7 @@
     $CONTENTS
 \*------------------------------------*/
 /**
- * CONTENTS............YouÔÇÖre reading it!
+ * CONTENTS............You’re reading it!
  * WARNING.............Here be dragons!
  * IMPORTS.............Begin importing the sections below
  *
@@ -176,7 +176,7 @@
     $DEFAULTS
 \*------------------------------------*/
 /**
- * inuit.cssÔÇÖ default variables. Redefine these in your `_vars.scss` file (found
+ * inuit.css’ default variables. Redefine these in your `_vars.scss` file (found
  * in the inuit.css-web-template) to override them.
  */
 /*------------------------------------*\
@@ -203,7 +203,7 @@
  * Base font-family.
  */
 /**
- * Default colour for objectsÔÇÖ borders etc.
+ * Default colour for objects’ borders etc.
  */
 /*------------------------------------*\
     $RESPONSIVE
@@ -247,7 +247,7 @@
  * English quote marks?
  */
 /**
- * If you want English quotes then please do not edit these; theyÔÇÖre only here
+ * If you want English quotes then please do not edit these; they’re only here
  * because Sass needs them.
  */
 /**
@@ -377,11 +377,11 @@
 /**
  * Media query mixin.
  *
- * ItÔÇÖs not great practice to define solid breakpoints up-front, preferring to
- * modify your design when it needs it, rather than assuming youÔÇÖll want a
- * change at ÔÇÿmobileÔÇÖ. However, as inuit.css is required to take a hands off
+ * It’s not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming you’ll want a
+ * change at ‘mobile’. However, as inuit.css is required to take a hands off
  * approach to design decisions, this is the closest we can get to baked-in
- * responsiveness. ItÔÇÖs flexible enough to allow you to set your own breakpoints
+ * responsiveness. It’s flexible enough to allow you to set your own breakpoints
  * but solid enough to be frameworkified.
  *
  * We define some broad breakpoints in our vars file that are picked up here
@@ -400,7 +400,7 @@
  *
  * We work out your end points for you:
  */
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -777,7 +777,7 @@ table {
  * As per: csswizardry.com/2011/10/reset-restarted
  */
 /**
-* LetÔÇÖs make the box model all nice, shall we...?
+* Let’s make the box model all nice, shall we...?
 */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -822,7 +822,7 @@ ins {
 }
 
 /**
- * So that `alt` text is visually offset if images donÔÇÖt load.
+ * So that `alt` text is visually offset if images don’t load.
  */
 img {
   font-style: italic;
@@ -1120,7 +1120,7 @@ blockquote q:after {
  */
 blockquote {
   /**
-   * .4em is roughly equal to the width of the opening ÔÇ£ that we wish to hang.
+   * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
   text-indent: -0.41em;
 }
@@ -1185,7 +1185,7 @@ pre mark {
  *
  * 1. Make the list look like code.
  * 2. Give the list flush numbers with a leading zero.
- * 3. Make sure lines of code donÔÇÖt wrap.
+ * 3. Make sure lines of code don’t wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
 .line-numbers {
@@ -1699,7 +1699,7 @@ label,
    <small class=extra-help>.edu emails only</small>
  *
  * We leave the help text in the document flow and merely set it to
- * `visibility:hidden;`. This means that it wonÔÇÖt interfere with anything once
+ * `visibility:hidden;`. This means that it won’t interfere with anything once
  * it reappears.
  *
  */
@@ -1842,7 +1842,7 @@ label,
        </div>
    </div>
  *
- * ItÔÇÖs pretty poorly named IÔÇÖm afraid, but it works...
+ * It’s pretty poorly named I’m afraid, but it works...
  *
  * Demo: jsfiddle.net/inuitcss/ufUh2
  *
@@ -2048,7 +2048,7 @@ html.flexbox {
 \*------------------------------------*/
 /**
  * Link-group nav, used for displaying related options. Extends `.nav--block`
- * but could also extend `.nav--fit`. Extend with colours and ÔÇÿcurrent statesÔÇÖ
+ * but could also extend `.nav--fit`. Extend with colours and ‘current states’
  * in your theme stylesheet.
  *
   <ul class="nav  options">
@@ -2265,7 +2265,7 @@ html.flexbox {
 }
 
 /**
- * Wait for a certain breakpoint to trigger ÔÇÿproper' marginalia. Up to this point,
+ * Wait for a certain breakpoint to trigger ‘proper' marginalia. Up to this point,
  * marginalia are inline with the other text.
  */
 @media (min-width: 1024px) {
@@ -2467,7 +2467,7 @@ html.flexbox {
        <li class=first><b class=split__title>1st place</b> Bob</li>
        <li class=second><b class=split__title>2nd place</b> Lilly</li>
        <li class=third><b class=split__title>3rd place</b> Ted</li>
-   </ol>ÔÇï
+   </ol>​
  *
  * Demo: jsfiddle.net/inuitcss/9gZW7
  *
@@ -2588,7 +2588,7 @@ html.flexbox {
 
 /**
  * Bring the flyouts into view when you hover their parents.
- * Two different types of flyout; ÔÇÿregularÔÇÖ (`.flyout`) and ÔÇÿalternativeÔÇÖ
+ * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
  * (`.flyout--alt`).
  */
 .flyout:hover,
@@ -2704,7 +2704,7 @@ html.flexbox {
     $SPRITE
 \*------------------------------------*/
 /**
- * Giving an element a class of `.sprite` will throw it into ÔÇÿspriteÔÇÖ mode and apply
+ * Giving an element a class of `.sprite` will throw it into ‘sprite’ mode and apply
  * a background image e.g.:
  *
    <a class="sprite  sprite--question-mark">More info&hellip;</a>
@@ -2713,13 +2713,13 @@ html.flexbox {
  *
    <a href=#><i class="sprite  sprite--question-mark"></i> Help and FAQ</a>
  *
- * Giving an element a class of `.icon` will throw it into ÔÇÿiconÔÇÖ mode and will
+ * Giving an element a class of `.icon` will throw it into ‘icon’ mode and will
  * not add a background, but should be used for icon fonts and is populated
  * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
  *
    <a href=#><i class=icon data-icon="&#xF000;"></i> View your favourites</a>
  *
- * Where ÔÇÿ&#xF000;ÔÇÖ might map to a star in your particular icon font.
+ * Where ‘&#xF000;’ might map to a star in your particular icon font.
  *
  * These all require extension in your theme stylesheet, e.g. in your own CSS:
  *
@@ -2740,7 +2740,7 @@ html.flexbox {
   vertical-align: middle;
   zoom: 1;
   /**
-   * So using `.icon` on certain elements doesnÔÇÖt make a visual difference.
+   * So using `.icon` on certain elements doesn’t make a visual difference.
    */
   font-style: normal;
   font-weight: normal;
@@ -2860,7 +2860,7 @@ html.flexbox {
  * limitations under the License.
  * 
  */
-/**
+/*!*
  * 
  * @csswizardry -- csswizardry.com/beautons
  * 
@@ -2877,11 +2877,11 @@ html.flexbox {
  * 4. Make buttons inherit font styles.
  * 5. Force all elements using beautons to appear clickable.
  * 6. Normalise box model styles.
- * 7. If the buttonÔÇÖs text is 1em, and the button is (3 * font-size) tall, then
+ * 7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
  *    there is 1em of space above and below that text. We therefore apply 1em
  *    of space to the left and right, as padding, to keep consistent spacing.
  * 8. Basic cosmetics for default buttons. Change or override at will.
- * 9. DonÔÇÖt allow buttons to have underlines; it kinda ruins the illusion.
+ * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
 .btn {
   display: inline-block;
@@ -2954,7 +2954,7 @@ html.flexbox {
 /**
  * These buttons will fill the entirety of their container.
  *
- * 1. Remove padding so that widths and paddings donÔÇÖt conflict.
+ * 1. Remove padding so that widths and paddings don’t conflict.
  */
 .btn--full {
   width: 100%;
@@ -3079,7 +3079,7 @@ html.flexbox {
   color: #fff;
   /* Override this color in your theme stylesheet */
   /**
-   * Normally weÔÇÖd use border-radius:100%; but instead here we just use an
+   * Normally we’d use border-radius:100%; but instead here we just use an
    * overly large number; `border-radius:100%;` would create an oval on
    * non-square elements whereas we just want to round the ends of an element.
    */
@@ -3123,7 +3123,7 @@ html.flexbox {
 }
 
 /**
- * Ornamental rules. Places a ┬º over the rule.
+ * Ornamental rules. Places a § over the rule.
  */
 .rule--ornament {
   position: relative;
@@ -3151,7 +3151,7 @@ html.flexbox {
     $STATS
 \*------------------------------------*/
  /**
-  * Simple object to display keyÔÇôvalue statistic-like information, e.g.:
+  * Simple object to display key–value statistic-like information, e.g.:
   *
     <div class=stat-group>
         <dl class=stat>
@@ -3229,7 +3229,7 @@ html.flexbox {
  * The beauty of combining the greyboxing with inuit.css objects is that any
  * prototyping can quickly be converted into/used as production code.
  *
- * For a more complete prototyping framework, consider Adam WhitcroftÔÇÖs Proto:
+ * For a more complete prototyping framework, consider Adam Whitcroft’s Proto:
  * adamwhitcroft.com/proto
  *
  * Demo: jsfiddle.net/inuitcss/qCXfh/
@@ -3253,7 +3253,7 @@ html.flexbox {
 }
 
 /**
- * All greyboxes will occupy 100% of their parentÔÇÖs width, but to alter their
+ * All greyboxes will occupy 100% of their parent’s width, but to alter their
  * heights we apply incrementally larger line-heights:
  */
 .greybox--small,
@@ -3419,15 +3419,15 @@ html.flexbox {
 }
 
 /**
- * If you have set `$responsive` to ÔÇÿtrueÔÇÖ in `_vars.scss` then you now have
- * access to these classes. You can define at which breakpoint youÔÇÖd like an
+ * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoint you’d like an
  * element to be a certain size, e.g.:
  *
  * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
  *
- * This would create a `div` that, at ÔÇÿdesktopÔÇÖ sizes, takes up a quarter of the
- * horizontal space, a half of that space at ÔÇÿtabletÔÇÖ sizes, and goes full width
- * at ÔÇÿmobileÔÇÖ sizes.
+ * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
+ * at ‘mobile’ sizes.
  *
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
@@ -4053,7 +4053,7 @@ html.flexbox {
   }
 }
 /**
- * If you have set the additional `$responsive-extra` variable to ÔÇÿtrueÔÇÖ in
+ * If you have set the additional `$responsive-extra` variable to ‘true’ in
  * `_vars.scss` then you now have access to the following class available to
  * accomodate much larger screen resolutions.
  */
@@ -4096,7 +4096,7 @@ html.flexbox {
 \*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
- * element/component doesnÔÇÖt already have a class to which you could apply this
+ * element/component doesn’t already have a class to which you could apply this
  * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
  * that ruleset as opposed to adding the `.float--left` class to the markup.
  *
@@ -4701,21 +4701,45 @@ body {
   border: 1px solid #666666;
 }
 
-/* .triangle-one-demo,
-.triangle-two-demo,
-.triangle-three-demo {
-	display: inline-block;
-	//margin-right: em(20px);
+.demo-code {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+  clear: both;
+  background: #e6e6e6;
+  font-size: 14px;
+}
+.demo-code > pre {
+  margin-bottom: 0;
 }
 
-.triangle-one-demo {
-	@include arrow(top, left, red);
+.codeblock__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.triangle-two-demo {
-	@include arrow(bottom, center, red, black);
+.codeblock__btn:hover, .codeblock__btn.zeroclipboard-is-hover {
+  background-color: #326e9b;
 }
-.triangle-three-demo {
-	background-color:#BADA55;
-    border:1px solid #ACE;
-    @include arrow(top, left, #BADA55, #ACE);
-} */
+
+.codeblock__text {
+  display: block;
+  width: 49px;
+  opacity: 1;
+}
+.codeblock__text.is-active {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #3f89c1;
+  opacity: 0;
+}
