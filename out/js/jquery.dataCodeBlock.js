@@ -45,7 +45,10 @@
 		},
 		postAppendCode: function(html){
 			var $thisCodeBlock = $(this);
-			var btn = '<button class="btn btn-demo js-copy btn--small btn--hard codeblock__btn">Copy</button>';
+			var btn =
+				'<button class="btn btn-demo js-copy btn--small btn--hard codeblock__btn">' +
+					'<span class="codeblock__text js-copy__text">Copy</span>' +
+				'</button>';
 			$thisCodeBlock.append(btn);
 			$thisCodeBlock.find('.js-copy').attr('data-clipboard-text', html);
 		}
@@ -54,6 +57,21 @@
 	var client = new ZeroClipboard( $('.js-copy'), {
 		  moviePath: '/js/zeroclipboard/ZeroClipboard.swf'
 	} );
+
+	client.on('complete', function(){
+
+		var $thisCopyButton = $(this);
+
+		$thisCopyButton.find('.js-copy__text')
+			.text('Copied!')
+			.addClass('is-active');
+
+		setTimeout(function(){
+			$thisCopyButton.find('.js-copy__text')
+				.text('Copy')
+				.removeClass('is-active');
+		}, 500);
+	});
 
 })(jQuery);
 

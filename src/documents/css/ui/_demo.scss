@@ -1,3 +1,5 @@
+@import 'compass/css3';
+
 h1,
 h2,
 h3,
@@ -167,7 +169,22 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	&:hover {
+	&:hover,
+	&.zeroclipboard-is-hover {
 		background-color: darken($brand-color, 10%);
+	}
+}
+.codeblock__text {
+	display: block;
+	width: 49px;
+	opacity: 1;
+	&.is-active {
+		@include transform(translateY(-50px));
+		-webkit-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		-moz-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		-o-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		color: $brand-color;
+		opacity: 0;
 	}
 }

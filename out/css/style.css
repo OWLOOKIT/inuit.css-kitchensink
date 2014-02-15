@@ -4721,6 +4721,25 @@ body {
   top: 0;
   right: 0;
 }
-.codeblock__btn:hover {
+.codeblock__btn:hover, .codeblock__btn.zeroclipboard-is-hover {
   background-color: #326e9b;
+}
+
+.codeblock__text {
+  display: block;
+  width: 49px;
+  opacity: 1;
+}
+.codeblock__text.is-active {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #3f89c1;
+  opacity: 0;
 }
