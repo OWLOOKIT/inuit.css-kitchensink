@@ -8,18 +8,21 @@ isGeneric: true
 <p>A lot of these classes carry `!important` as you will always want them to win out over other selectors.</p>
 
 <h3>Add/remove Floats</h3>
+<p><em>.float--none</em>, <em>.float--right</em> and <em>.float--left</em></p>
 <p class="float--none float-demo greybox">Float none</p>
 <p class="float--right float-demo greybox">Float right</p>
 <p class="float--left float-demo greybox">Float left</p>
 <hr />
 
 <h3>Text aligment</h3>
+<p><em>.text--left</em>, <em>.text--center</em> and <em>.text--right</em></p>
 <p class="text--left">Text left</p>
 <p class="text--center">Text center</p>
 <p class="text--right">Text right</p>
 <hr />
 
 <h3>Font weights</h3>
+<p><em>.weight--light</em>, <em>.weight--normal</em> and <em>.weight--semibold</em></p>
 <p class="weight--light">Weight light</p>
 <p class="weight--normal">Weight normal</p>
 <p class="weight--semibold">Weight semibold</p>
@@ -142,33 +145,43 @@ isGeneric: true
 <hr />
 
 <h3>Full bleed</h3>
-<div class="island greybox">
-	<p class="full-bleed bleed-demo">Pull items full width of `.island` parents.<p>
+<p><em>.full-bleed</em></p>
+<div class="island greybox" data-codeblock="#full-bleed">
+	<p class="full-bleed bleed-demo">Pull items full width of `.island` parents.</p>
 </div>
 <div class="islet greybox">
-	<p class="full-bleed bleed-demo">Pull items full width of `.islet` parents.<p>
+	<p class="full-bleed bleed-demo">Pull items full width of `.islet` parents.</p>
 </div>
+<div id="full-bleed" class="demo-code"></div>
 <hr />
 
 <h3>Informative</h3>
 <p>Add a help cursor to any element that gives the user extra information on `:hover`.</p>
-<a class="btn btn-demo informative">Help?</a> (Hover me)
+<p><em>.informative</em></p>
+<a class="btn btn-demo informative" data-codeblock="#informative">Help?</a> (Hover me)
+<div id="informative" class="demo-code"></div>
 <hr />
 
 <h3>Muted</h3>
 <p>Mute an object by reducing its opacity.</p>
+<p><em>.muted</em></p>
 <a class="btn btn--positive">Without `.muted`</a>
-<a class="btn btn--positive muted">With `.muted`</a>
+<a class="btn btn--positive muted" data-codeblock="#muted">With `.muted`</a>
+<div id="muted" class="demo-code"></div>
 <hr />
 
 <h3>Go</h3>
 <p>Add a right-angled quote to links that imply movement</p>
-<a href="#" class="go">Read more</a>
+<p><em>.go</em></p>
+<a href="#" class="go" data-codeblock="#go">Read more</a>
+<div id="go" class="demo-code"></div>
 <hr />
 
 <h3>Caps</h3>
 <p>Apply capital case to an element (usually a `strong`).</p>
-<p class="caps">CAPITALIZE</p>
+<p><em>.caps</em></p>
+<p class="caps" data-codeblock="#caps">CAPITALIZE</p>
+<div id="caps" class="demo-code"></div>
 <hr />
 
 <h3>Accessibility</h3>
@@ -189,4 +202,4 @@ isGeneric: true
 	<li>.accessibility--desk-wide</li>
 	<li>.visuallyhidden--desk-wide</li>
 </ul>
-
+<hr class="rule rule--ornament" />

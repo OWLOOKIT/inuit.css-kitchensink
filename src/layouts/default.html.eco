@@ -16,13 +16,13 @@
 		<%- @content %>
 	</div>
 
-	<%- @getBlock('scripts').toHTML() %>
+	<%- @getBlock('scripts').add(['http://code.jquery.com/jquery-2.1.0.min.js', 'js/zeroclipboard/ZeroClipboard.min.js', 'js/jquery.dataCodeBlock.js']).toHTML() %>
 
-	<!-- GITHUB RUBBON -->
+	<!-- GITHUB RIBBON -->
 	<a href="https://github.com/terabytenz/inuit.css-kitchensink" targer="_blank">
 		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
 	</a>
-	<!-- / GITHUB RIBBONS -->
+	<!-- / GITHUB RIBBON -->
 
 	<!-- GOOGLE ANALYTICS -->
 	<script>
