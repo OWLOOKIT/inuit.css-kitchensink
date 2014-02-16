@@ -55,7 +55,7 @@
 	});
 
 	var client = new ZeroClipboard( $('.js-copy'), {
-		  moviePath: '/js/zeroclipboard/ZeroClipboard.swf'
+		  moviePath: '../js/zeroclipboard/ZeroClipboard.swf'
 	} );
 
 	client.on('complete', function(){
