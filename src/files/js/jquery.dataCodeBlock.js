@@ -53,11 +53,12 @@
 			$thisCodeBlock.find('.js-copy').attr('data-clipboard-text', html);
 		}
 	});
+	
+	//Kind of nasty but ZeroClipboard doesn't allow you to have relative URLs. We need to do this because when on gh-pages the site isn't at the root URL like in the dev environment.
+	var urlToSWF = 'http://terabytenz.github.io/inuit.css-kitchensink/js/zeroclipboard/ZeroClipboard.swf';
+	ZeroClipboard.config( { moviePath: urlToSWF } );
 
-	var client = new ZeroClipboard( $('.js-copy'), {
-		  moviePath: '../js/zeroclipboard/ZeroClipboard.swf'
-	} );
-
+	var client = new ZeroClipboard( $('.js-copy'));
 	client.on('complete', function(){
 
 		var $thisCopyButton = $(this);
